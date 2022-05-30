@@ -1,48 +1,278 @@
 @import "variables.scss";
 @import "reset.scss";
 @import "buttons.scss";
-@import "footer.scss" ;
+@import "footer.scss";
 
-.logo{
+.logo_principal {
     display: flex;
     justify-content: center;
+    border-bottom: 2px solid #3db9a1;
 }
-    
-.logoprincipal {
-    border-bottom: 1px solid #3DB9A1;
-    max-width: 700px;
-    max-height: 650px;
-
-}
-.logoprincipal img {
+.logo_principal img {
     width: 30%;
     margin-bottom: 20px;
 }
 
 .menu {
-    padding: 10px; 
-    ul{
-        display: flex ;
-        gap: 10px;
-    } 
-}
-.menuesquerda a {
     display: flex;
-    justify-content: flex-start;
-
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+    font-family: "Roboto", sans-serif;
     color: black;
-    text-decoration: none;
-
 }
-
-.menudireita a {
-    display: flex;
-    justify-content: flex-end;
-    color: black;
+a {
     text-decoration: none;
 }
 
+.imagem_menu img {
+    width: 100%;
+}
 
+.texto_inicial {
+    color: #374249;
+    font-size: 40px;
+    font-family: "Prociono", serif;
+    width: 100%;
+    text-align: center;
 
+    @media (max-width: $smartphone) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.novidades_oculos {
+    display: inline-block;
+    overflow: hidden;
+    color: $white;
+    background-color: $color-primary;
+    border-radius: 12px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 38px;
+    padding: 10px 27px 10px 27px;
+    margin-left: 23px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 395px;
+    height: 69px;
+
+    @media (max-width: $smartphone) {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+.full-width1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    @media (max-width: $smartphone) {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    @media (max-width: $tablet) {
+    }
+}
+
+.retangulo_oculos {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 380px;
+    height: 483px;
+    margin-bottom: 37px;
+}
+
+.texto_oculos {
+    text-align: center;
+    font-size: 31px;
+    width: 100%;
+}
+
+#cor_oculos {
+    text-align: center;
+    font-size: 31px;
+    width: 100%;
+}
+
+.preco_oculos {
+    font-size: 30px;
+    margin-top: 11px;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+}
+
+.linha_oculos {
+    border: 1px solid #3db9a1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.comprar_oculos {
+    border-radius: 7px;
+    background-color: $background-color;
+    color: $black;
+    height: 34px;
+    width: 133px;
+    font-size: 18px;
+    padding-bottom: 13px;
+    margin-top: 100px;
+    padding: 0px;
+    margin-top: 30px;
+}
+.comprar_oculos:hover {
+    background-color: #374249;
+    color: white;
+}
+.comprar_acessorios:hover {
+    background-color: #374249;
+    color: white;
+}
+
+.novidades_acessorios {
+    display: inline;
+    overflow: hidden;
+    color: $white;
+    background-color: $color-primary;
+    border-radius: 12px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 38px;
+    padding: 10px 27px 10px 27px;
+    margin-left: 23px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    width: 395px;
+    height: 69px;
+
+    @media (max-width: $smartphone) {
+        margin: 0 auto;
+        margin: 30px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+.full-width2 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    overflow: hidden;
+    gap: 23px;
+    margin-top: 20px;
+
+    @media (max-width: $smartphone) {
+        display: grid;
+        width: 380px;
+        margin: auto;
+        width: inherit;
+    }
+}
+.retangulo_acessorios {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    width: 580px;
+    margin-top: 30px;
+    margin-bottom: 37px;
+
+    @media (max-width: $smartphone) {
+        width: 380px;
+        width: inherit;
+    }
+}
+
+.texto_acessorios {
+    text-align: center;
+    font-size: 31px;
+}
+
+.preco_acessorios {
+    font-size: 30px;
+    margin-top: 11px;
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+}
+
+.caixa_oculos {
+    margin: inherit;
+    margin-top: 40px;
+    margin-bottom: 62px;
+}
+
+.linha_acessorios {
+    border: 1px solid #3db9a1;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+}
+
+.comprar_acessorios {
+    border-radius: 7px;
+    background-color: $background-color;
+    color: $black;
+    height: 34px;
+    width: 133px;
+    font-size: 18px;
+    padding-bottom: 13px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primary;
+    color: $white;
+    ul {
+        display: flex;
+        gap: 40px;
+    }
+    height: 143px;
+
+    @media (max-width: $smartphone) {
+        justify-items: center;
+        display: grid;
+        height: auto;
+    }
+}
+
+.footer_titulo {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 27px;
+    padding: 0px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+.footer_esquerda {
+    display: inline;
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer_direita {
+    display: inline;
+    text-align: center;
+}
 
 /* COMENTARIO */

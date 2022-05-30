@@ -9,13 +9,56 @@
             name="description"
             content="A Primavera chegou, mas tenha calma! Se ainda não comprou óculos, não se preocupe, ainda temos stock. Basta entrar no site e escolher os óculos que lhe fique melhor. Alta durabilidade com estilos diversos: Quadrados, Redondos, Aviador."
         />
+        <!--Bootstrap-->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+            integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+            crossorigin="anonymous"
+        ></script>
+        <!-- CSS only -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+        />
 
+        <!-- JavaScript Bundle with Popper -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"
+        ></script>
+
+        <!--googlefonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <!--Roboto-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
             rel="stylesheet"
         />
+        <!--Prociono-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Prociono&display=swap"
+            rel="stylesheet"
+        />
+        <!--Red Hat Display-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap"
+            rel="stylesheet"
+        />
+
         <!--Favicon-->
         <link
             rel="shortcut icon"
@@ -25,123 +68,118 @@
         <!--Adicionar pasta css-->
         <link href="styles/css/style.css" rel="stylesheet" />
         <title>Safeglasses</title>
+        <script defer src="oculos.js"></script>
     </head>
     <body>
-        <header class="logo">
-            
-            <div class="logoprincipal">
+        <header>
+            <div class="logo_principal">
                 <img src="imagem/logo.png" alt="Logo da marca" />
             </div>
 
             <div class="menu">
-                <div>
-                <nav class="menuesquerda">
+                <nav class="menu_esquerda">
                     <ul>
-                        <li class="menunovidades"><a href="">Novidades</a></li>
+                        <li class="menu_novidades">
+                            <a href="">Novidades</a>
+                        </li>
                         <li><a href="">Óculos</a></li>
                         <li><a href="">Acessórios</a></li>
                         <li><a href="">Promoção</a></li>
                     </ul>
                 </nav>
-          </div>  
 
-            <div>
-                <nav class="menudireita">
-                    <ul>
-                        <li><a href="">Login</a></li>
-                        <li class="menupesquisa"><a href="">Pesquisa</a></li>
-                    </ul>
-                </nav>
+                <div>
+                    <nav class="menu_direita">
+                        <ul>
+                            <img src="/imagem/user.png" alt="user" />
+                            <li><a href="">Login</a></li>
+                            <img src="/imagem/lupa.png" alt="lupa" />
+                            <li class="menu_pesquisa">
+                                <a href="">Pesquisa</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-
-            <div class="imagemmenu">
-                <img src="imagem/imagem1.png" alt="Imagem menu" />
-            </div>
-        </div>
         </header>
 
-        
-
         <main>
-            <h2 id="frase">Escolhe já os teus óculos</h2>
-            <h2 id="frase">Mais proteção e mais estilo à distância de um clique</h2>
+            <div class="imagem_menu">
+                <img src="imagem/imagem1.png" alt="Imagem menu" />
+            </div>
 
-            <h2 class="novidadesoculos">Novidades Óculos</h2>
-            <div class="full-width">
-                <div class="retangulo1">
-                    <img
-                        class="imglilas"
-                        src="imagem/lilas.png"
-                        alt="imagem óculos lilas"
-                    />
-                    <p class="textolilas">
-                        Óculos de sol <br />
-                        cor lilas
-                    </p>
-                    <p class="precolilas"><strong>50€</strong></p>
-                    <p class="caracteristicaslilas">
-                        Caracteristicas do produto
-                    </p>
-                    <button class="comprar">Comprar</button>
+            <div class="texto_inicial">
+                <h2>Escolhe já os teus óculos</h2>
+                <h2>Mais proteção e mais estilo à distância de um clique</h2>
+            </div>
+            <div><h2 class="novidades_oculos">Novidades Óculos</h2></div>
+
+            <div class="full-width1">
+                <div class="retangulo_oculos">
+                    <img id="imagem" alt="imagem óculos lilas" />
+                    <p class="texto_oculos"></p>
+                    <p id="cor_oculos"></p>
+                    <p class="preco_oculos"><strong></strong></p>
+                    <hr class="linha_oculos" />
+                    <button class="comprar_oculos">Comprar</button>
                 </div>
 
-                <div class="retangulo1">
+                <div class="retangulo_oculos">
                     <img
-                        class="imgvermelho"
+                        class="redglasseshhhhhhhhh"
                         src="imagem/vermelho.jpg"
                         alt="imagem óculos vermelhos"
                     />
-                    <p class="textovermelho">
+                    <p class="texto_oculos">
                         Óculos de sol <br />
                         cor vermelha
                     </p>
-                    <p class="precovermelho"><strong>50€</strong></p>
-                    <p class="caracteristicasvermelho">
-                        Caracteristicas do produto
-                    </p>
-                    <button class="comprarvermelho">Comprar</button>
+                    <p class="preco_oculos"><strong>50€</strong></p>
+                    <hr class="linha_oculos" />
+                    <button class="comprar_oculos">Comprar</button>
                 </div>
-                <div class="retangulo1">
-                    <img
-                        class="imgverazul"
-                        src="imagem/azuis.png"
-                        alt="imagem óculos azuis"
-                    />
-                    <p class="textoazul">
+                <div class="retangulo_oculos">
+                    <img src="imagem/azuis.png" alt="imagem óculos azuis" />
+                    <p class="texto_oculos">
                         Óculos de sol <br />
                         cor azul
                     </p>
-                    <p class="precoazul"><strong>50€</strong></p>
-                    <p class="caracteristicasazul">
-                        Caracteristicas do produto
-                    </p>
-                    <button class="comprar">Comprar</button>
+                    <p class="preco_oculos"><strong>50€</strong></p>
+                    <hr class="linha_oculos" />
+                    <button class="comprar_oculos">Comprar</button>
                 </div>
             </div>
 
-            <h2 class="novidadesacessorios">Novidades Acessórios</h2>
-            <div>
-                <div>
+            <h2 class="novidades_acessorios">Novidades Acessórios</h2>
+            <div class="full-width2">
+                <div class="retangulo_acessorios">
                     <img
                         src="imagem/cordoes.png"
                         alt="imagem cordões para óculos"
                     />
-                    <p>Cordões para óculos</p>
-                    <p><strong>10€</strong></p>
-                    <button>Comprar</button>
+                    <p class="texto_acessorios">Cordões para óculos</p>
+                    <p class="preco_acessorios"><strong>10€</strong></p>
+                    <hr class="linha_acessorios" />
+                    <button class="comprar_acessorios">Comprar</button>
                 </div>
-                <div>
-                    <img src="imagem/caixa.png" alt="Caixa para óculos" />
-                    <p>Caixa para óculos</p>
-                    <p><strong>25€</strong></p>
-                    <button>Comprar</button>
+
+                <div class="retangulo_acessorios">
+                    <img
+                        class="caixa_oculos"
+                        src="imagem/caixa.png"
+                        alt="Caixa para óculos"
+                    />
+                    <p class="texto_acessorios">Caixa para óculos</p>
+                    <p class="preco_acessorios"><strong>25€</strong></p>
+                    <hr class="linha_acessorios" />
+                    <button class="comprar_acessorios">Comprar</button>
                 </div>
             </div>
         </main>
         <footer>
-            <div>
-                <div class="footeresquerda">
-                    <h3>Loja Safeglasses</h3>
+            <div class="footer">
+                <div class="footer_esquerda">
+                    <h3 class="footer_titulo">Loja Safeglasses</h3>
                     <ul>
                         <li>Sobre Nós</li>
                         <li>Morada</li>
@@ -149,8 +187,8 @@
                         <li>Contacto</li>
                     </ul>
                 </div>
-                <div class="footerdireita">
-                    <h3>Social</h3>
+                <div class="footer_direita">
+                    <h3 class="footer_titulo">Social</h3>
                     <ul>
                         <li>
                             <img
