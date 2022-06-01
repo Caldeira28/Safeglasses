@@ -1,4 +1,4 @@
-function Product(name, color, price, mainImage) {
+/*function Product(name, color, price, mainImage) {
     this.name = name;
     this.color = color;
     this.price = price;
@@ -15,7 +15,7 @@ const product = new Product(
 );
 
 document.getElementsByClassName("texto_oculos")[0].innerHTML = product.name;
-document.getElementById("cor_oculos").innerHTML = product.color;
+document.getElementsByClassName("cor_oculos")[0].innerHTML = product.color;
 document.getElementsByClassName("preco_oculos")[0].innerHTML =
     product.price + "€";
-document.getElementById("imagem").setAttribute("src", product.mainImage);
+document.getElementById("imagem").setAttribute("src", product.mainImage);*/
